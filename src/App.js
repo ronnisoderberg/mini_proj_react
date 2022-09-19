@@ -1,11 +1,10 @@
 import './App.css';
-import { Link } from "react-router-dom";
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
-            <Link to="/about">About</Link> |{" "}
-        <Link to="/qr">QR Generator</Link>
+      <Navbar/>
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.

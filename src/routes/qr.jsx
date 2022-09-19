@@ -1,8 +1,10 @@
 import React from 'react';
+import Navbar from '../components/navbar';
 
 const Qr = () => {
     return (
-        <div>
+        <div className='App'>
+            <Navbar/>
             QR Page
         </div>
     );
