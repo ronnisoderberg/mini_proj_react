@@ -1,8 +1,11 @@
 import './App.css';
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+            <Link to="/about">About</Link> |{" "}
+        <Link to="/qr">QR Generator</Link>
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
