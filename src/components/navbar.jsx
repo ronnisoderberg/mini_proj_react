@@ -7,7 +7,7 @@ const Navbar = () => {
         <div>
             <Link to="/">Home</Link> |{" "}
         <Link to="/about">About</Link> |{" "}
-        <Link to="/qr">QR Generator</Link> 
+        <Link to="/qrgen">QR Generator</Link> 
         </div>
     );
 }
