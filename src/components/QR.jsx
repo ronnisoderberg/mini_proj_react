@@ -6,10 +6,10 @@ const  qrReturn = (props) => {
 
         return( 
             <div>
-                <img src={finishedQr}></img>
+                <img src={props.finishedQr}></img>
 
             </div>
         )
 }
 
-expect default qrReturn
+export default qrReturn

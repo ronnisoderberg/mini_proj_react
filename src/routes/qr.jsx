@@ -35,9 +35,9 @@ export function Qr(){
                 handleSubmit = {handelMakeQr} 
                 handleChange = {handleChange}
                 />
-                <qrReturn 
+                {/* <qrReturn 
                 finishedQr = {HÄR SKA DEN FÄRDIGA ADRESSRADEN SKICKAS TILL QR.JSX, så att det blir en fin bild}
-                />
+                /> */}
 
                 
                 </div>
