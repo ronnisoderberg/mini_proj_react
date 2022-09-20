@@ -1,16 +1,6 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: white;
 }
 
 .App-header {
@@ -24,12 +14,18 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 body {
   background-color: #282c34;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.QrForm {
+  margin-top: 50px;
+}
+
+.QrCode {
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {

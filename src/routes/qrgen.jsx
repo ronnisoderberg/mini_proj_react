@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Navbar from '../components/navbar';
 import FormURL from '../components/FormURL';
 import QR   from '../components/QR';
 
-export function Qr(){
+export function Qrgen(){
 
     const [formInput, setFormInput] = useState("");
     const [qr, qrSet] = useState();
@@ -26,8 +25,7 @@ export function Qr(){
       
         return(
 
-            <div>
-                <Navbar/>
+            <div className="App">
 
                 <div className="QrForm">
                 <FormURL 

@@ -1,23 +1,19 @@
-import './App.css';
-import Navbar from './components/navbar';
+import "./App.css";
+import Navbar from "./components/navbar";
+import { Routes, Route } from "react-router-dom";
+import { Qrgen } from "./routes/qrgen";
+import About from "./routes/about";
+import Homepage from "./routes/homepage";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="about" element={<About />} />
+        <Route path="qrgen" element={<Qrgen />} />
+      </Routes>
     </div>
   );
 }

@@ -4,7 +4,7 @@ const QR = (props) => {
     
     const { qr } = props
     return( 
-        <div>
+        <div className='QrCode'>
                 <img src={qr}></img>
 
                 {console.log(props, "test")}
