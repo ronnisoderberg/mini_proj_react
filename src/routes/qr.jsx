@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Navbar from '../components/navbar';
 import FormURL from '../components/FormURL';
-import qrReturn from '../components/QR';
+import QR   from '../components/QR';
 
 export function Qr(){
 
     const [formInput, setFormInput] = useState("");
+    const [qr, qrSet] = useState();
 
     const handleChange = (e) => {
         setFormInput(e.target.value);
@@ -16,9 +17,8 @@ export function Qr(){
   
       if(formInput !== "")
     {
-        const newQr= {
-            url : formInput
-        }
+
+        qrSet(`https://qrtag.net/api/qr_transparent_6.png?url=${formInput}`)
     }
       }
   
@@ -35,9 +35,9 @@ export function Qr(){
                 handleSubmit = {handelMakeQr} 
                 handleChange = {handleChange}
                 />
-                {/* <qrReturn 
-                finishedQr = {HÄR SKA DEN FÄRDIGA ADRESSRADEN SKICKAS TILL QR.JSX, så att det blir en fin bild}
-                /> */}
+                <QR
+                qr = {qr}
+                />
 
                 
                 </div>

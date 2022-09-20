@@ -1,15 +1,45 @@
-import React from 'react';  
+import React from 'react';
 
-const  qrReturn = (props) => {
+const QR = (props) => {
+    
+    const { qr } = props
+    return( 
+        <div>
+                <img src={qr}></img>
 
-    const { finishedQr } = props
-
-        return( 
-            <div>
-                <img src={props.finishedQr}></img>
-
+                {console.log(props, "test")}
             </div>
         )
 }
 
-export default qrReturn
+export default QR;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+
+
+// const  qrReturn = (props) => {
+
+//     const { qr } = props
+//     return( 
+//         <div>
+//                 <img src={qr}></img>
+
+//                 {console.log(props, "test")}
+//             </div>
+//         )
+// }
+
+// export default qrReturn
